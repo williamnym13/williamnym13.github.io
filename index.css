@@ -44,6 +44,12 @@ html, body {
     /* background-color:#334a94; */
 }
 
+.item3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .flyt {
     float: left;
 }
@@ -125,3 +131,8 @@ h1 {
 #secondheader {
     text-align: center;
 }
+
+.item3 {
+    flex-direction: column;
+}
+
