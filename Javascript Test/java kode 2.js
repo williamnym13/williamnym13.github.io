@@ -1,13 +1,9 @@
-function myFunction() {
-    document.getElementById('Hello World').innerHTML = 'Hello World!'
+
+function intervalClock() {
+    let accurateDate = new Date();
+    document.getElementById('klokke').innerHTML = accurateDate.toLocaleTimeString();
 }
 
-const helloWorld = document.getElementById('Hello World');
-const button = document.getElementById('clicky');
+setInterval(intervalClock, 1000);
 
-button.addEventListener('click', myFunction);
-console.log(button);
 
-let bildegalleri = [
-    
-]

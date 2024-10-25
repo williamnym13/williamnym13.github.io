@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+}
+
+#photo {
+    height: 45%;
+    width: 45%;
+}
+
+.nav_buttons {
+    display: flex;
+    flex-grow: 2;
+}
