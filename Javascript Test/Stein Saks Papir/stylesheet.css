@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -8,8 +9,9 @@ img {
     width: 10%;
 }
 
-#rockPaperScissors img {
+#rockPaperScissors {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
