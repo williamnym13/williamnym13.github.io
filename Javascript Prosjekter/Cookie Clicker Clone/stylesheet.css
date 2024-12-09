@@ -14,4 +14,13 @@ html, body {
 #theBigCookie {
     height: 10%;
     width: 10%;
+    cursor: pointer;
+}
+
+#Upgrader {
+    list-style-type: none;
+}
+
+#UpgradeOne {
+    height: 25px;
 }
