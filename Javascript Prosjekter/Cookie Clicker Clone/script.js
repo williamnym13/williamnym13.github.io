@@ -2,7 +2,7 @@
 let currentCookies = 0;
 let upgradeCounter = 0;
 let multiplier = 1;
-let autoValue = 0;
+let autoClickerAmount = 0;
 
 // Andre Elementer av spillet
 let cookieImage = document.getElementById('theBigCookie');
@@ -17,10 +17,6 @@ function cookieClick() {
     console.log(currentCookies);
     output.innerText = currentCookies;
 }
-function autoCookieClick () {
-    currentCookies = currentCookies + 1;
-    console.log(currentCookies);
-}
 
 
 // Oppgradinger
@@ -31,17 +27,26 @@ function firstUpgrade () {
     if (currentCookies >= 10) {
         currentCookies -= currentCookies;
         multiplier += 1;
+        console.log('Upgrade 1 Purchased!')
     }
     output.innerText = currentCookies;
 }
 
 function autoClicker () {
-    if (currentCookies >= 15) {
+    if (currentCookies >= 20) {
         currentCookies -= currentCookies;
-        autoValue = 1;
+        autoClickerAmount += 1;
+        document.getElementById('auto-clicker-count').innerText = "Currently owned: " + autoClickerAmount;
+        console.log('Upgrade 2 Purchased!')
     }
     if (autoValue = 1) {
-        setInterval (autoCookieClick, 1000);
+        setInterval (cookieClick, 1000);
     }
     output.innerText = currentCookies;
+}
+
+function prestige () {
+    if (currentCookies >= 1000) {
+
+    }
 }
