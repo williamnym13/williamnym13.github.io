@@ -44,9 +44,3 @@ function autoClicker () {
     }
     output.innerText = currentCookies;
 }
-
-function prestige () {
-    if (currentCookies >= 1000) {
-
-    }
-}
