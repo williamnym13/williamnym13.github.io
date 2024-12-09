@@ -17,10 +17,15 @@ function cookieClick() {
     console.log(currentCookies);
     output.innerText = currentCookies;
 }
+function autoCookieClick () {
+    currentCookies = currentCookies + 1;
+    console.log(currentCookies);
+}
 
 
-
+// Oppgradinger
 document.getElementById('UpgradeOne').addEventListener('click', firstUpgrade);
+document.getElementById('UpgradeTwo').addEventListener('click', autoClicker);
 
 function firstUpgrade () {
     if (currentCookies >= 10) {
@@ -36,6 +41,7 @@ function autoClicker () {
         autoValue = 1;
     }
     if (autoValue = 1) {
-        setInterval (cookieClick, 1000);
+        setInterval (autoCookieClick, 1000);
     }
+    output.innerText = currentCookies;
 }
