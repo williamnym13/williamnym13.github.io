@@ -3,6 +3,7 @@ let currentCookies = 0;
 let upgradeCounter = 0;
 let multiplier = 1;
 let autoClickerAmount = 0;
+let multiplierAmount = 0;
 
 // Andre Elementer av spillet
 let cookieImage = document.getElementById('theBigCookie');
@@ -27,6 +28,8 @@ function firstUpgrade () {
     if (currentCookies >= 10) {
         currentCookies -= currentCookies;
         multiplier += 1;
+        multiplierAmount += 1;
+        document.querySelector('#multiplier-count').innerText = "Currently Owned: " + multiplierAmount;
         console.log('Upgrade 1 Purchased!')
     }
     output.innerText = currentCookies;
